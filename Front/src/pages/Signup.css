@@ -1,0 +1,34 @@
+.Sign-image-container{
+    background-image: url("../Images/Wolf-entry.png");
+    height: 80vh;
+    background-size: cover;
+}
+
+.Form-sign--container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+
+.Form-login--container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+
+.Log-image-container{
+    background-image: url("../Images/Wolf-entry.png");
+    height: 80vh;
+    background-size: cover;
+}
+
+@media screen and (max-width: 756px) {
+    .Log-image-container,
+    .Sign-image-container{
+        display: none;
+    }
+}

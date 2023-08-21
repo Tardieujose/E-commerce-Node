@@ -10,17 +10,17 @@ function Login() {
   return (
     <Container>
         <Row className="justify-content-center">
-            <Col md={8} className="Form-login--container">
+            <Col md={5} className="Form-login--container">
                 <Form style={{ width: "100%" }}>
                     <h1>Log To Your Account</h1>
-                    <Form.Group>
+                    <Form.Group className='mb-3'>
                         <Form.Label>Your Email Address</Form.Label>
-                        <Form.Control type="Email" placeholder="Enter Email" value="" required />
+                        <Form.Control type="Email" placeholder="Enter Email" value={Email} required onChange={(e)=> setEmail(e.target.value)} />
                     </Form.Group>
 
-                    <Form.Group>
+                    <Form.Group className='mb-3'>
                         <Form.Label>Your Password</Form.Label>
-                        <Form.Control type="Password" placeholder="Enter Password" value="" required />
+                        <Form.Control type="Password" placeholder="Enter Password" value={Password} required onChange={(e)=> setPassword(e.target.value)} />
                     </Form.Group>
 
                     <Form.Group>
@@ -30,7 +30,7 @@ function Login() {
                 </Form>
             </Col>
                 
-            <Col md={8}></Col>
+            <Col md={5} className="Log-image-container"></Col>
         </Row>
     </Container>
   )
